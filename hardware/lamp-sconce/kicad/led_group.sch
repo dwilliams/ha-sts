@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date 2/21/2012 12:53:17 AM
+EESchema Schematic File Version 2  date 3/20/2012 11:04:08 PM
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -35,9 +35,9 @@ EELAYER 25  0
 EELAYER END
 $Descr A4 11700 8267
 encoding utf-8
-Sheet 4 4
+Sheet 9 9
 Title ""
-Date "21 feb 2012"
+Date "21 mar 2012"
 Rev ""
 Comp ""
 Comment1 ""
@@ -45,4 +45,409 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
+Text Notes 9100 1400 0    60   ~ 0
+GRN\n140mA\n3.6V
+Text Notes 6500 1400 0    60   ~ 0
+BLU\n140mA\n3.6V
+Text Notes 4000 1400 0    60   ~ 0
+RED\n140mA\n2.1V
+Connection ~ 3700 4000
+Wire Wire Line
+	3700 4100 3700 4000
+Connection ~ 3700 4700
+Wire Wire Line
+	3400 4600 3400 4700
+Wire Wire Line
+	3400 4700 4000 4700
+Connection ~ 4000 5800
+Wire Wire Line
+	4000 5800 4000 5200
+Wire Wire Line
+	9100 4600 9100 5800
+Wire Wire Line
+	9100 5800 3600 5800
+Connection ~ 6500 1100
+Wire Wire Line
+	6500 1100 6500 1700
+Wire Wire Line
+	2800 5000 3000 5000
+Wire Wire Line
+	4000 2900 4000 2700
+Wire Wire Line
+	4000 4100 4000 3900
+Wire Wire Line
+	6000 4400 6200 4400
+Wire Wire Line
+	6500 4000 6500 4200
+Wire Wire Line
+	6500 2700 6500 2900
+Wire Wire Line
+	8800 4400 8600 4400
+Wire Wire Line
+	9100 4000 9100 4200
+Wire Wire Line
+	9100 2700 9100 2900
+Wire Wire Line
+	9100 2100 9100 2300
+Wire Wire Line
+	9100 3300 9100 3500
+Wire Wire Line
+	8100 4400 7900 4400
+Wire Wire Line
+	6500 2100 6500 2300
+Wire Wire Line
+	6500 3300 6500 3500
+Wire Wire Line
+	5300 4400 5500 4400
+Wire Wire Line
+	4000 4800 4000 4600
+Wire Wire Line
+	4000 3500 4000 3300
+Wire Wire Line
+	4000 2300 4000 2100
+Wire Wire Line
+	3500 5000 3700 5000
+Wire Wire Line
+	3400 1100 9100 1100
+Wire Wire Line
+	9100 1100 9100 1700
+Wire Wire Line
+	4000 1100 4000 1700
+Connection ~ 4000 1100
+Wire Wire Line
+	6500 5800 6500 4600
+Connection ~ 6500 5800
+Wire Wire Line
+	3700 4700 3700 4600
+Connection ~ 4000 4700
+Wire Wire Line
+	3400 4100 3400 4000
+Wire Wire Line
+	3400 4000 4000 4000
+Connection ~ 4000 4000
+$Comp
+L R R62
+U 1 1 4F69503D
+P 3400 4350
+AR Path="/4F4338FC/4F69503D" Ref="R62"  Part="1" 
+AR Path="/4F6935CB/4F69503D" Ref="R60"  Part="1" 
+AR Path="/4F69360D/4F69503D" Ref="R54"  Part="1" 
+AR Path="/4F6935F5/4F69503D" Ref="R56"  Part="1" 
+AR Path="/4F6935E3/4F69503D" Ref="R58"  Part="1" 
+F 0 "R62" V 3480 4350 50  0000 C CNN
+F 1 "75 ohm" V 3400 4350 50  0000 C CNN
+F 4 "541-75.0TCT-ND" V 3400 4350 60  0001 C CNN "Digi-Key Part"
+	1    3400 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R63
+U 1 1 4F695038
+P 3700 4350
+AR Path="/4F4338FC/4F695038" Ref="R63"  Part="1" 
+AR Path="/4F6935CB/4F695038" Ref="R61"  Part="1" 
+AR Path="/4F69360D/4F695038" Ref="R55"  Part="1" 
+AR Path="/4F6935F5/4F695038" Ref="R57"  Part="1" 
+AR Path="/4F6935E3/4F695038" Ref="R59"  Part="1" 
+F 0 "R63" V 3780 4350 50  0000 C CNN
+F 1 "75 ohm" V 3700 4350 50  0000 C CNN
+F 4 "541-75.0TCT-ND" V 3700 4350 60  0001 C CNN "Digi-Key Part"
+	1    3700 4350
+	1    0    0    -1  
+$EndComp
+Text HLabel 3600 5800 0    60   Input ~ 0
+LED_GND
+Text HLabel 3400 1100 0    60   Input ~ 0
+LED_+12V
+Text HLabel 7900 4400 0    60   Input ~ 0
+LED_GRN
+Text HLabel 5300 4400 0    60   Input ~ 0
+LED_BLU
+Text HLabel 2800 5000 0    60   Input ~ 0
+LED_RED
+$Comp
+L MOSFET_N Q15
+U 1 1 4F69115A
+P 9000 4400
+AR Path="/4F4338FC/4F69115A" Ref="Q15"  Part="1" 
+AR Path="/4F69360D/4F69115A" Ref="Q3"  Part="1" 
+AR Path="/4F6935F5/4F69115A" Ref="Q6"  Part="1" 
+AR Path="/4F6935E3/4F69115A" Ref="Q9"  Part="1" 
+AR Path="/4F6935CB/4F69115A" Ref="Q12"  Part="1" 
+F 0 "Q15" H 9010 4570 60  0000 R CNN
+F 1 "MOSFET_N" H 9010 4250 60  0000 R CNN
+F 4 "568-6215-1-ND" H 9000 4400 60  0001 C CNN "Digi-Key Part"
+	1    9000 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L MOSFET_N Q14
+U 1 1 4F691158
+P 6400 4400
+AR Path="/4F4338FC/4F691158" Ref="Q14"  Part="1" 
+AR Path="/4F69360D/4F691158" Ref="Q2"  Part="1" 
+AR Path="/4F6935F5/4F691158" Ref="Q5"  Part="1" 
+AR Path="/4F6935E3/4F691158" Ref="Q8"  Part="1" 
+AR Path="/4F6935CB/4F691158" Ref="Q11"  Part="1" 
+F 0 "Q14" H 6410 4570 60  0000 R CNN
+F 1 "MOSFET_N" H 6410 4250 60  0000 R CNN
+F 4 "568-6215-1-ND" H 6400 4400 60  0001 C CNN "Digi-Key Part"
+	1    6400 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L MOSFET_N Q13
+U 1 1 4F691155
+P 3900 5000
+AR Path="/4F4338FC/4F691155" Ref="Q13"  Part="1" 
+AR Path="/4F69360D/4F691155" Ref="Q1"  Part="1" 
+AR Path="/4F6935F5/4F691155" Ref="Q4"  Part="1" 
+AR Path="/4F6935E3/4F691155" Ref="Q7"  Part="1" 
+AR Path="/4F6935CB/4F691155" Ref="Q10"  Part="1" 
+F 0 "Q13" H 3910 5170 60  0000 R CNN
+F 1 "MOSFET_N" H 3910 4850 60  0000 R CNN
+F 4 "568-6215-1-ND" H 3900 5000 60  0001 C CNN "Digi-Key Part"
+	1    3900 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R48
+U 1 1 4F69114D
+P 3250 5000
+AR Path="/4F4338FC/4F69114D" Ref="R48"  Part="1" 
+AR Path="/4F69360D/4F69114D" Ref="R6"  Part="1" 
+AR Path="/4F6935F5/4F69114D" Ref="R12"  Part="1" 
+AR Path="/4F6935E3/4F69114D" Ref="R18"  Part="1" 
+AR Path="/4F6935CB/4F69114D" Ref="R24"  Part="1" 
+F 0 "R48" V 3330 5000 50  0000 C CNN
+F 1 "1Kohm" V 3250 5000 50  0000 C CNN
+F 4 "RMCF1206JT1K00CT-ND" V 3250 5000 60  0001 C CNN "Digi-Key Part"
+	1    3250 5000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R50
+U 1 1 4F69114C
+P 5750 4400
+AR Path="/4F4338FC/4F69114C" Ref="R50"  Part="1" 
+AR Path="/4F69360D/4F69114C" Ref="R8"  Part="1" 
+AR Path="/4F6935F5/4F69114C" Ref="R14"  Part="1" 
+AR Path="/4F6935E3/4F69114C" Ref="R20"  Part="1" 
+AR Path="/4F6935CB/4F69114C" Ref="R26"  Part="1" 
+F 0 "R50" V 5830 4400 50  0000 C CNN
+F 1 "1Kohm" V 5750 4400 50  0000 C CNN
+F 4 "RMCF1206JT1K00CT-ND" V 5750 4400 60  0001 C CNN "Digi-Key Part"
+	1    5750 4400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R52
+U 1 1 4F69114B
+P 8350 4400
+AR Path="/4F4338FC/4F69114B" Ref="R52"  Part="1" 
+AR Path="/4F69360D/4F69114B" Ref="R10"  Part="1" 
+AR Path="/4F6935F5/4F69114B" Ref="R16"  Part="1" 
+AR Path="/4F6935E3/4F69114B" Ref="R22"  Part="1" 
+AR Path="/4F6935CB/4F69114B" Ref="R28"  Part="1" 
+F 0 "R52" V 8430 4400 50  0000 C CNN
+F 1 "1Kohm" V 8350 4400 50  0000 C CNN
+F 4 "RMCF1206JT1K00CT-ND" V 8350 4400 60  0001 C CNN "Digi-Key Part"
+	1    8350 4400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R53
+U 1 1 4F691132
+P 9100 3750
+AR Path="/4F4338FC/4F691132" Ref="R53"  Part="1" 
+AR Path="/4F69360D/4F691132" Ref="R11"  Part="1" 
+AR Path="/4F6935F5/4F691132" Ref="R17"  Part="1" 
+AR Path="/4F6935E3/4F691132" Ref="R23"  Part="1" 
+AR Path="/4F6935CB/4F691132" Ref="R29"  Part="1" 
+F 0 "R53" V 9180 3750 50  0000 C CNN
+F 1 "10 ohm" V 9100 3750 50  0000 C CNN
+F 4 "RNCP1206FTD10R0CT-ND" V 9100 3750 60  0001 C CNN "Digi-Key Part"
+	1    9100 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R51
+U 1 1 4F691130
+P 6500 3750
+AR Path="/4F4338FC/4F691130" Ref="R51"  Part="1" 
+AR Path="/4F69360D/4F691130" Ref="R9"  Part="1" 
+AR Path="/4F6935F5/4F691130" Ref="R15"  Part="1" 
+AR Path="/4F6935E3/4F691130" Ref="R21"  Part="1" 
+AR Path="/4F6935CB/4F691130" Ref="R27"  Part="1" 
+F 0 "R51" V 6580 3750 50  0000 C CNN
+F 1 "10 ohm" V 6500 3750 50  0000 C CNN
+F 4 "RNCP1206FTD10R0CT-ND" V 6500 3750 60  0001 C CNN "Digi-Key Part"
+	1    6500 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R49
+U 1 1 4F69112B
+P 4000 4350
+AR Path="/4F4338FC/4F69112B" Ref="R49"  Part="1" 
+AR Path="/4F69360D/4F69112B" Ref="R7"  Part="1" 
+AR Path="/4F6935F5/4F69112B" Ref="R13"  Part="1" 
+AR Path="/4F6935E3/4F69112B" Ref="R19"  Part="1" 
+AR Path="/4F6935CB/4F69112B" Ref="R25"  Part="1" 
+F 0 "R49" V 4080 4350 50  0000 C CNN
+F 1 "75 ohm" V 4000 4350 50  0000 C CNN
+F 4 "541-75.0TCT-ND" V 4000 4350 60  0001 C CNN "Digi-Key Part"
+	1    4000 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED D56
+U 1 1 4F69111C
+P 9100 3100
+AR Path="/4F4338FC/4F69111C" Ref="D56"  Part="1" 
+AR Path="/4F69360D/4F69111C" Ref="D10"  Part="1" 
+AR Path="/4F6935F5/4F69111C" Ref="D20"  Part="1" 
+AR Path="/4F6935E3/4F69111C" Ref="D30"  Part="1" 
+AR Path="/4F6935CB/4F69111C" Ref="D40"  Part="1" 
+F 0 "D56" H 9100 3200 50  0000 C CNN
+F 1 "LED" H 9100 3000 50  0000 C CNN
+F 4 "475-1324-1-ND" H 9100 3100 60  0001 C CNN "Digi-Key Part"
+	1    9100 3100
+	0    -1   1    0   
+$EndComp
+$Comp
+L LED D53
+U 1 1 4F69111B
+P 6500 3100
+AR Path="/4F4338FC/4F69111B" Ref="D53"  Part="1" 
+AR Path="/4F69360D/4F69111B" Ref="D7"  Part="1" 
+AR Path="/4F6935F5/4F69111B" Ref="D17"  Part="1" 
+AR Path="/4F6935E3/4F69111B" Ref="D27"  Part="1" 
+AR Path="/4F6935CB/4F69111B" Ref="D37"  Part="1" 
+F 0 "D53" H 6500 3200 50  0000 C CNN
+F 1 "LED" H 6500 3000 50  0000 C CNN
+F 4 "475-1305-1-ND" H 6500 3100 60  0001 C CNN "Digi-Key Part"
+	1    6500 3100
+	0    -1   1    0   
+$EndComp
+$Comp
+L LED D50
+U 1 1 4F69111A
+P 4000 3700
+AR Path="/4F4338FC/4F69111A" Ref="D50"  Part="1" 
+AR Path="/4F69360D/4F69111A" Ref="D4"  Part="1" 
+AR Path="/4F6935F5/4F69111A" Ref="D14"  Part="1" 
+AR Path="/4F6935E3/4F69111A" Ref="D24"  Part="1" 
+AR Path="/4F6935CB/4F69111A" Ref="D34"  Part="1" 
+F 0 "D50" H 4000 3800 50  0000 C CNN
+F 1 "LED" H 4000 3600 50  0000 C CNN
+F 4 "475-1315-1-ND" H 4000 3700 60  0001 C CNN "Digi-Key Part"
+	1    4000 3700
+	0    -1   1    0   
+$EndComp
+$Comp
+L LED D49
+U 1 1 4F691117
+P 4000 3100
+AR Path="/4F4338FC/4F691117" Ref="D49"  Part="1" 
+AR Path="/4F69360D/4F691117" Ref="D3"  Part="1" 
+AR Path="/4F6935F5/4F691117" Ref="D13"  Part="1" 
+AR Path="/4F6935E3/4F691117" Ref="D23"  Part="1" 
+AR Path="/4F6935CB/4F691117" Ref="D33"  Part="1" 
+F 0 "D49" H 4000 3200 50  0000 C CNN
+F 1 "LED" H 4000 3000 50  0000 C CNN
+F 4 "475-1315-1-ND" H 4000 3100 60  0001 C CNN "Digi-Key Part"
+	1    4000 3100
+	0    -1   1    0   
+$EndComp
+$Comp
+L LED D52
+U 1 1 4F691116
+P 6500 2500
+AR Path="/4F4338FC/4F691116" Ref="D52"  Part="1" 
+AR Path="/4F69360D/4F691116" Ref="D6"  Part="1" 
+AR Path="/4F6935F5/4F691116" Ref="D16"  Part="1" 
+AR Path="/4F6935E3/4F691116" Ref="D26"  Part="1" 
+AR Path="/4F6935CB/4F691116" Ref="D36"  Part="1" 
+F 0 "D52" H 6500 2600 50  0000 C CNN
+F 1 "LED" H 6500 2400 50  0000 C CNN
+F 4 "475-1305-1-ND" H 6500 2500 60  0001 C CNN "Digi-Key Part"
+	1    6500 2500
+	0    -1   1    0   
+$EndComp
+$Comp
+L LED D55
+U 1 1 4F691115
+P 9100 2500
+AR Path="/4F4338FC/4F691115" Ref="D55"  Part="1" 
+AR Path="/4F69360D/4F691115" Ref="D9"  Part="1" 
+AR Path="/4F6935F5/4F691115" Ref="D19"  Part="1" 
+AR Path="/4F6935E3/4F691115" Ref="D29"  Part="1" 
+AR Path="/4F6935CB/4F691115" Ref="D39"  Part="1" 
+F 0 "D55" H 9100 2600 50  0000 C CNN
+F 1 "LED" H 9100 2400 50  0000 C CNN
+F 4 "475-1324-1-ND" H 9100 2500 60  0001 C CNN "Digi-Key Part"
+	1    9100 2500
+	0    -1   1    0   
+$EndComp
+$Comp
+L LED D47
+U 1 1 4F691108
+P 4000 1900
+AR Path="/4F4338FC/4F691108" Ref="D47"  Part="1" 
+AR Path="/4F69360D/4F691108" Ref="D1"  Part="1" 
+AR Path="/4F6935F5/4F691108" Ref="D11"  Part="1" 
+AR Path="/4F6935E3/4F691108" Ref="D21"  Part="1" 
+AR Path="/4F6935CB/4F691108" Ref="D31"  Part="1" 
+F 0 "D47" H 4000 2000 50  0000 C CNN
+F 1 "LED" H 4000 1800 50  0000 C CNN
+F 4 "475-1315-1-ND" H 4000 1900 60  0001 C CNN "Digi-Key Part"
+	1    4000 1900
+	0    -1   1    0   
+$EndComp
+$Comp
+L LED D54
+U 1 1 4F691104
+P 9100 1900
+AR Path="/4F4338FC/4F691104" Ref="D54"  Part="1" 
+AR Path="/4F69360D/4F691104" Ref="D8"  Part="1" 
+AR Path="/4F6935F5/4F691104" Ref="D18"  Part="1" 
+AR Path="/4F6935E3/4F691104" Ref="D28"  Part="1" 
+AR Path="/4F6935CB/4F691104" Ref="D38"  Part="1" 
+F 0 "D54" H 9100 2000 50  0000 C CNN
+F 1 "LED" H 9100 1800 50  0000 C CNN
+F 4 "475-1324-1-ND" H 9100 1900 60  0001 C CNN "Digi-Key Part"
+	1    9100 1900
+	0    -1   1    0   
+$EndComp
+$Comp
+L LED D51
+U 1 1 4F691100
+P 6500 1900
+AR Path="/4F4338FC/4F691100" Ref="D51"  Part="1" 
+AR Path="/4F69360D/4F691100" Ref="D5"  Part="1" 
+AR Path="/4F6935F5/4F691100" Ref="D15"  Part="1" 
+AR Path="/4F6935E3/4F691100" Ref="D25"  Part="1" 
+AR Path="/4F6935CB/4F691100" Ref="D35"  Part="1" 
+F 0 "D51" H 6500 2000 50  0000 C CNN
+F 1 "LED" H 6500 1800 50  0000 C CNN
+F 4 "475-1305-1-ND" H 6500 1900 60  0001 C CNN "Digi-Key Part"
+	1    6500 1900
+	0    -1   1    0   
+$EndComp
+$Comp
+L LED D48
+U 1 1 4F6910FD
+P 4000 2500
+AR Path="/4F4338FC/4F6910FD" Ref="D48"  Part="1" 
+AR Path="/4F69360D/4F6910FD" Ref="D2"  Part="1" 
+AR Path="/4F6935F5/4F6910FD" Ref="D12"  Part="1" 
+AR Path="/4F6935E3/4F6910FD" Ref="D22"  Part="1" 
+AR Path="/4F6935CB/4F6910FD" Ref="D32"  Part="1" 
+F 0 "D48" H 4000 2600 50  0000 C CNN
+F 1 "LED" H 4000 2400 50  0000 C CNN
+F 4 "475-1315-1-ND" H 4000 2500 60  0001 C CNN "Digi-Key Part"
+	1    4000 2500
+	0    -1   1    0   
+$EndComp
 $EndSCHEMATC
